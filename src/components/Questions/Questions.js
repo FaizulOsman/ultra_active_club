@@ -25,6 +25,7 @@ const Questions = () => {
                     Where will we use useEffect except loading data?
                 </div>
                 <div className="collapse-content text-sm">
+                    <p>The useEffect Hook allows you to perform side effects in your components. Some examples of side effects are: fetching data, directly updating the DOM, and timers. useEffect accepts two arguments.</p>
                     <p>useEffect after render: We know that, the useEffect() is used for causing side effects in functional components and it is also capable for handling componentDidMount(), componentDidUpdate() and componentWillUnmount() life-cycle methods of class based components into functional component.</p>
                 </div>
             </div>
