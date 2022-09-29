@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Myself from '../Myself/Myself';
 import Swal from 'sweetalert2'
 
-const Cart = ({ timereq }) => {
-    const [breaktime, setBreaktime] = useState([])
+const Cart = ({ timeReq }) => {
+    const [breaktime, setBreaktime] = useState(0)
 
     const breakTimes = [10, 20, 30, 40, 50]
     const handleBreakTime = (breaktimes) => {
@@ -12,9 +12,9 @@ const Cart = ({ timereq }) => {
     }
 
     let breakTime = breaktime;
-    const exist = localStorage.getItem('Break-time')
-    if (exist) {
-        breakTime = exist
+    const existBreakTime = localStorage.getItem('Break-time')
+    if (existBreakTime) {
+        breakTime = existBreakTime
     }
 
     const handleActivity = () => {
@@ -44,7 +44,7 @@ const Cart = ({ timereq }) => {
                 <h4 className='text-xl font-bold'>Exercise Details</h4>
                 <div className="bg-base-100 p-3 rounded-md mx-auto my-3 flex justify-between">
                     <span>Exercise time</span>
-                    <span>{timereq} seconds</span>
+                    <span>{timeReq} seconds</span>
                 </div>
                 <div className="bg-base-100 p-3 rounded-md mx-auto my-3 flex justify-between">
                     <span>Break time</span>

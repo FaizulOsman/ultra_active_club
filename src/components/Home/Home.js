@@ -18,7 +18,15 @@ const Home = () => {
 
     const handleTimeRequired = activity => {
         const newTime = parseInt(activity.time_required);
-        setTimereq(timereq + newTime)
+        const totalTime = timereq + newTime
+        setTimereq(totalTime)
+        localStorage.setItem('Exercise-time', totalTime)
+    }
+
+    let timeReq = timereq
+    const existExerciseTime = localStorage.getItem('Exercise-time')
+    if (existExerciseTime) {
+        timeReq = existExerciseTime
     }
 
 
@@ -41,7 +49,7 @@ const Home = () => {
                 </div>
 
                 <div className="bg-neutral col-span-12 sm:col-span-5 md:col-span-3 rounded-lg m-10 sm:m-0">
-                    <Cart timereq={timereq}></Cart>
+                    <Cart timeReq={timeReq}></Cart>
                 </div>
             </div>
 

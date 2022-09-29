@@ -3,6 +3,7 @@ import React from 'react';
 const Questions = () => {
     return (
         <div>
+            <h2 className='text-3xl font-bold mb-5'>Questions and Answers</h2>
             <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-neutral rounded-md">
                 <div className="collapse-title text-xl font-medium">
                     How does React work?
@@ -25,8 +26,12 @@ const Questions = () => {
                     Where will we use useEffect except loading data?
                 </div>
                 <div className="collapse-content text-sm">
-                    <p>The useEffect Hook allows you to perform side effects in your components. Some examples of side effects are: fetching data, directly updating the DOM, and timers. useEffect accepts two arguments.</p>
-                    <p>useEffect after render: We know that, the useEffect() is used for causing side effects in functional components and it is also capable for handling componentDidMount(), componentDidUpdate() and componentWillUnmount() life-cycle methods of class based components into functional component.</p>
+                    <p>The useEffect Hook allows you to perform side effects in your components. Some examples of side effects are: </p>
+                    <li>Running on state change: validating input field. </li>
+                    <li>Running on state change: live filtering.</li>
+                    <li>Running on state change: trigger animation on new array value</li>
+                    <li>Running on props change: update paragraph list on fetched API data update.</li>
+                    <li>Running on props change: updating fetched API data to get BTC updated price.</li>
                 </div>
             </div>
         </div>
