@@ -1,92 +1,92 @@
 [
   {
-    "picture": "https://i.ibb.co/FB2zF0t/16486455263339.jpg",
-    "name": "Cristiano Ronaldo",
+    "picture": "https://i.ibb.co/d6GHCSX/v4-460px-Do-a-Maradona-in-Soccer-Step-12-Version-2.jpg",
+    "name": "The Maradona Turn",
     "age": [
       38,
       48
     ],
-    "time_required": 26,
+    "time_required": 12,
     "description": "When people succeed, it is because of hard work. Luck has nothing to do with success."
   },
   {
-    "picture": "https://i.ibb.co/dPPtMg8/Getty-Images-1347553871.jpg",
-    "name": "Lionel Messi",
+    "picture": "https://i.ibb.co/X2znBJW/maxresdefault.jpg",
+    "name": "The Cruyff Turn",
     "age": [
       26,
       36
     ],
-    "time_required": 37,
+    "time_required": 17,
     "description": "When people succeed, it is because of hard work. Luck has nothing to do with success."
   },
   {
-    "picture": "https://i.ibb.co/nPGQZdm/88132.jpg",
-    "name": "Mesut Özil",
+    "picture": "https://i.ibb.co/LYRyPCF/cropped-Getty-Images-941534222.jpg",
+    "name": "The Scissor Kick",
     "age": [
       28,
       38
     ],
-    "time_required": 44,
+    "time_required": 14,
     "description": "When people succeed, it is because of hard work. Luck has nothing to do with success."
   },
   {
-    "picture": "https://i.ibb.co/7RpTyw9/ronaldinho-barcelona-2006-722x360.jpg",
-    "name": "Ronaldinho",
+    "picture": "https://i.ibb.co/kcNyhX7/hqdefault.jpg",
+    "name": "The Rabona",
     "age": [
       37,
       47
     ],
-    "time_required": 38,
+    "time_required": 18,
     "description": "When people succeed, it is because of hard work. Luck has nothing to do with success."
   },
   {
-    "picture": "https://i.ibb.co/09BRVY9/ronaldinho-barcelona-2006-722x360-1.jpg",
-    "name": "Mohamed Salah",
+    "picture": "https://i.ibb.co/vQLg9HJ/c614629dd351af7e3e02afc7881421ad.jpg",
+    "name": "The Elastico",
     "age": [
       39,
       49
     ],
-    "time_required": 45,
+    "time_required": 15,
     "description": "When people succeed, it is because of hard work. Luck has nothing to do with success."
   },
   {
-    "picture": "https://i.ibb.co/nwx6hFn/ronaldinho-barcelona-2006-722x360-2.jpg",
-    "name": "Kylian Mbappé",
+    "picture": "https://i.ibb.co/89D1Hdn/maxresdefault-1.jpg",
+    "name": "The Pullback V",
     "age": [
       32,
       42
     ],
-    "time_required": 34,
+    "time_required": 13,
     "description": "When people succeed, it is because of hard work. Luck has nothing to do with success."
   },
   {
-    "picture": "https://i.ibb.co/3FzCQWr/ronaldinho-barcelona-2006-722x360-3.jpg",
-    "name": "Neymar",
+    "picture": "https://i.ibb.co/fQdKDMx/maxresdefault-2.jpg",
+    "name": "The Rainbow or the Okocha Flick",
     "age": [
       26,
       36
     ],
-    "time_required": 40,
+    "time_required": 11,
     "description": "When people succeed, it is because of hard work. Luck has nothing to do with success."
   },
   {
-    "picture": "https://i.ibb.co/YXD6Gdb/ronaldinho-barcelona-2006-722x360-5.jpg",
-    "name": "Marcelo",
+    "picture": "https://i.ibb.co/Qj2RWdc/notWebP.jpg",
+    "name": "The Knuckleball Free Kick",
     "age": [
       23,
       33
     ],
-    "time_required": 24,
+    "time_required": 14,
     "description": "When people succeed, it is because of hard work. Luck has nothing to do with success."
   },
   {
-    "picture": "https://i.ibb.co/NYRGsf7/ronaldinho-barcelona-2006-722x360-4.jpg",
-    "name": "Manuel Neuer",
+    "picture": "https://i.ibb.co/7SDPpWq/Getty-Images-630793454.jpg",
+    "name": "The Scorpion Kickr",
     "age": [
       30,
       40
     ],
-    "time_required": 45,
+    "time_required": 19,
     "description": "When people succeed, it is because of hard work. Luck has nothing to do with success."
   }
 ]
