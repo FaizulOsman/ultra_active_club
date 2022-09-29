@@ -13,7 +13,7 @@ const Myself = () => {
                 </div>
                 <div className="">
                     <h4 className='text-xl font-bold'>Faizul Osman</h4>
-                    <p>{<FontAwesomeIcon icon={faLocation}></FontAwesomeIcon>}Hathazari, Chattogram</p>
+                    <p>{<FontAwesomeIcon icon={faLocation}></FontAwesomeIcon>} <span className='pl-1 text-sm'>Hathazari, Chattogram</span></p>
                 </div>
             </div>
 

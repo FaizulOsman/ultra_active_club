@@ -1,25 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Myself from '../Myself/Myself';
 
 const Cart = ({ cart }) => {
+    const [breaktime, setBreaktime] = useState([])
 
-    const handleBreakTime = () => {
-        console.log('this.innerText');
+    const breakTimes = [10, 20, 30, 40, 50]
+    const handleBreakTime = (breaktimes) => {
+        setBreaktime(breaktimes);
     }
 
-
     return (
-        <div className=''>
+        <div className='sticky top-0'>
             <Myself></Myself>
 
             <div className="p-5">
                 <h4 className='text-xl font-bold'>Add A Break</h4>
                 <div className="bg-base-100 p-3 rounded-md mx-auto my-3 flex flex-wrap justify-between gap-2">
-                    <div className="btn btn-circle btn-sm text-xs"><span>10</span>s</div>
-                    <div className="btn btn-circle btn-sm text-xs"><span>20</span>s</div>
-                    <div onClick={handleBreakTime} className="btn btn-circle btn-sm text-xs"><span>30</span>s</div>
-                    <div className="btn btn-circle btn-sm text-xs"><span>40</span>s</div>
-                    <div className="btn btn-circle btn-sm text-xs">50s</div>
+                    {
+                        breakTimes.map(breaktimes => <div onClick={() => handleBreakTime(breaktimes)} className="btn btn-circle btn-sm text-xs">{breaktimes}s</div>)
+                    }
                 </div>
             </div>
 
@@ -31,10 +30,10 @@ const Cart = ({ cart }) => {
                 </div>
                 <div className="bg-base-100 p-3 rounded-md mx-auto my-3 flex justify-between">
                     <span>Break time</span>
-                    <span>{ } seconds</span>
+                    <span>{breaktime} seconds</span>
                 </div>
 
-                <button className="btn btn-primary w-full mt-10">Add to list</button>
+                <button className="btn btn-primary w-full mt-10">Activity Completed</button>
             </div>
         </div>
     );

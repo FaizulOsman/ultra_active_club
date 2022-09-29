@@ -23,8 +23,8 @@ const Home = () => {
         <div>
             <div className="grid grid-cols-12 gap-4">
 
-                <div className="col-span-9 m-10">
-                    <h2 className='text-secondary text-2xl font-bold mb-5'>
+                <div className="col-span-12 sm:col-span-7 md:col-span-9 m-10 mb-0">
+                    <h2 className='text-secondary text-3xl font-bold mb-5'>
                         {<FontAwesomeIcon icon={faFootballBall}></FontAwesomeIcon>}
                         <span className='ml-3'>UtRA-Active-club</span>
                     </h2>
@@ -35,19 +35,17 @@ const Home = () => {
                             players.map(player => <Player handleTimeRequired={handleTimeRequired} player={player}></Player>)
                         }
                     </div>
-                    <div className="mt-24">
-                        <Questions></Questions>
-                    </div>
                 </div>
 
-
-                <div className="bg-neutral border col-span-3">
+                {/* border rounded-md border-gray-600 */}
+                <div className="bg-neutral col-span-12 sm:col-span-5 md:col-span-3">
                     <Cart cart={cart}></Cart>
                 </div>
-
-
             </div>
 
+            <div className="my-24 w-10/12 mx-auto">
+                <Questions></Questions>
+            </div>
         </div>
     );
 };
