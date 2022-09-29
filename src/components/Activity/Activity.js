@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Player = ({ player, handleTimeRequired, key }) => {
-    const { picture, name, description, age, time_required } = player
+const Activity = ({ activity, handleTimeRequired }) => {
+    const { picture, name, description, age, time_required } = activity
 
     return (
         <div>
@@ -13,7 +13,7 @@ const Player = ({ player, handleTimeRequired, key }) => {
                     <h5 className='font-semibold'>For Age: {age[0]}-{age[1]}</h5>
                     <h5 className='font-semibold'>Time required: {time_required}s</h5>
                     <div className="card-actions justify-end">
-                        <button onClick={() => handleTimeRequired(player)} className="btn btn-primary w-full">Add to list</button>
+                        <button onClick={() => handleTimeRequired(activity)} className="btn btn-primary w-full">Add to list</button>
                     </div>
                 </div>
             </div>
@@ -21,4 +21,4 @@ const Player = ({ player, handleTimeRequired, key }) => {
     );
 };
 
-export default Player;
+export default Activity;

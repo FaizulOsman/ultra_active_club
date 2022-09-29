@@ -2,22 +2,22 @@ import React, { useEffect, useState } from 'react';
 import { faFutbol } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Cart from '../Cart/Cart';
-import Player from '../Player/Player';
+import Activity from '../Activity/Activity';
 import Questions from '../Questions/Questions';
 
 const Home = () => {
-    const [players, setPlayers] = useState([])
+    const [activities, setActivities] = useState([])
     const [timereq, setTimereq] = useState(0)
 
 
     useEffect(() => {
-        fetch('players.json')
+        fetch('activities.json')
             .then(res => res.json())
-            .then(data => setPlayers(data))
+            .then(data => setActivities(data))
     }, [])
 
-    const handleTimeRequired = player => {
-        const newTime = parseInt(player.time_required);
+    const handleTimeRequired = activity => {
+        const newTime = parseInt(activity.time_required);
         setTimereq(timereq + newTime)
     }
 
@@ -35,7 +35,7 @@ const Home = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                         {
-                            players.map(player => <Player handleTimeRequired={handleTimeRequired} player={player} key={player.name}></Player>)
+                            activities.map(activity => <Activity handleTimeRequired={handleTimeRequired} activity={activity} key={activity.name}></Activity>)
                         }
                     </div>
                 </div>
