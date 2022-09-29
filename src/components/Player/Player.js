@@ -1,9 +1,7 @@
 import React from 'react';
 
-const Player = ({ player, handleTimeRequired }) => {
+const Player = ({ player, handleTimeRequired, key }) => {
     const { picture, name, description, age, time_required } = player
-    // console.log(handleTimeRequired);
-
 
     return (
         <div>
