@@ -18,7 +18,13 @@ const Home = () => {
 
     const handleTimeRequired = activity => {
         const newTime = parseInt(activity.time_required);
-        const totalTime = timereq + newTime
+        let totalTime;
+        const existExerciseTime = localStorage.getItem('Exercise-time')
+        if (existExerciseTime) {
+            totalTime = parseInt(existExerciseTime) + newTime
+        } else {
+            totalTime = timereq + newTime
+        }
         setTimereq(totalTime)
         localStorage.setItem('Exercise-time', totalTime)
     }
