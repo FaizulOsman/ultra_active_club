@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Myself from '../Myself/Myself';
+import Swal from 'sweetalert2'
 
 const Cart = ({ timereq }) => {
     const [breaktime, setBreaktime] = useState([])
@@ -16,7 +17,14 @@ const Cart = ({ timereq }) => {
         breakTime = exist
     }
 
+    const handleActivity = () => {
+        Swal.fire(
+            'Congratulation!',
+            `You are done with your activity!`,
+            'success'
+        )
 
+    }
 
 
     return (
@@ -43,7 +51,7 @@ const Cart = ({ timereq }) => {
                     <span>{breakTime} seconds</span>
                 </div>
 
-                <button className="btn btn-primary w-full mt-10">Activity Completed</button>
+                <button onClick={handleActivity} className="btn btn-primary w-full mt-10">Activity Completed</button>
             </div>
         </div>
     );

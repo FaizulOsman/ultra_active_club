@@ -40,12 +40,12 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="bg-neutral col-span-12 sm:col-span-5 md:col-span-3">
+                <div className="bg-neutral col-span-12 sm:col-span-5 md:col-span-3 rounded-lg m-10 sm:m-0">
                     <Cart timereq={timereq}></Cart>
                 </div>
             </div>
 
-            <div className="my-24 w-10/12 mx-auto">
+            <div className="my-24 mx-10">
                 <Questions></Questions>
             </div>
         </div>
