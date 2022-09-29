@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { faFootballBall } from '@fortawesome/free-solid-svg-icons';
+import { faFutbol } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Cart from '../Cart/Cart';
 import Player from '../Player/Player';
@@ -28,7 +28,7 @@ const Home = () => {
 
                 <div className="col-span-12 sm:col-span-7 md:col-span-9 m-10 mb-0">
                     <h2 className='text-secondary text-3xl font-bold mb-5'>
-                        {<FontAwesomeIcon icon={faFootballBall}></FontAwesomeIcon>}
+                        {<FontAwesomeIcon icon={faFutbol}></FontAwesomeIcon>}
                         <span className='ml-3'>Football-Activities</span>
                     </h2>
                     <h4 className='text-lg text-primary my-5'>Select your favourite activity</h4>
