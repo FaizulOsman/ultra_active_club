@@ -13,7 +13,7 @@ const Activity = ({ activity, handleTimeRequired }) => {
                     <h5 className='font-semibold'>For Age: {age[0]}-{age[1]}</h5>
                     <h5 className='font-semibold'>Time required: {time_required}s</h5>
                     <div className="card-actions justify-end">
-                        <button onClick={() => handleTimeRequired(activity)} className="btn btn-primary w-full">Add to list</button>
+                        <button onClick={() => handleTimeRequired(activity)} className="btn btn-primary w-full focus:ring focus:ring-violet-300 focus:bg-accent">Add to list</button>
                     </div>
                 </div>
             </div>

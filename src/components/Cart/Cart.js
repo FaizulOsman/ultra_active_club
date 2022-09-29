@@ -35,7 +35,7 @@ const Cart = ({ timereq }) => {
                 <h4 className='text-xl font-bold'>Add A Break</h4>
                 <div className="bg-base-100 p-3 rounded-md mx-auto my-3 flex flex-wrap justify-between gap-2">
                     {
-                        breakTimes.map(breaktimes => <div onClick={() => handleBreakTime(breaktimes)} className="btn btn-circle btn-sm text-xs">{breaktimes}s</div>)
+                        breakTimes.map(breaktimes => <button onClick={() => handleBreakTime(breaktimes)} className="btn btn-circle btn-sm text-xs focus:bg-primary focus:text-white">{breaktimes}s</button>)
                     }
                 </div>
             </div>
